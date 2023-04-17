@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+transi{
+    transition: all 0.2s linear;
+}
+@tailwind utilities;
+
+/* monikasadhyanshi */
+

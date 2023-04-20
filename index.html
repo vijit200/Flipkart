@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/e3b51afa4e.js" crossorigin="anonymous"></script>
     <title>Flipkart</title>
 </head>
-<body class="relative">
-    <nav class="h-[100px] w-[100vw] bg-[#2874F0] pt-[20px] stik">
+<body class="relative w-[100vw] h-[100vh] overflow-hidden overflow-y-auto">
+    <nav class="h-[100px] w-[100vw] bg-[#2874F0] pt-[20px] stik xl:hidden" id="navbar">
         <div class="flex justify-between">
             <div class="flex">
                 <div class="h-[65%]">
@@ -63,6 +63,44 @@
 
 
         
+    </nav>
+
+    <!-- nav bar for big screen -->
+    <nav class="hidden h-[61px] w-[100vw] bg-[#2874F0]  stik xl:flex">
+        <div class="w-[14vw]"></div>
+        <div>
+            <div>
+                <img src="./assests/flipkart-plus_8d85f4.png" alt="" class="w-[85px] mt-[10px]">
+            </div>
+            <div class="flex">
+                <a href="#" class="text-white font-[500] italic text-[12px] w-[100px]">Explore <span class="text-[#ffe500] font-[500] ml-[-2px]">Plus </span></a>
+                <img src="./assests/plus_aef861.png" alt="" class="w-[10px] h-[10px] ml-[-35px]">
+            </div>
+            
+        </div>
+        <div class="mt-[10px] ml-[8px]">
+            <input type="text" class="px-[5px] py-[5px] h-[35.8px] w-[30vw] rounded-sm outline-none" placeholder="Search, for product, brand & more">
+            <a href="#" class="bg-white px-[5px] py-[7px] ml-[-8px] rounded-sm"><i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #005eff;"></i></a>
+        </div>
+
+        <div class="mt-[16px] ml-[3vw]">
+            <a href="#" class="text-[#2874F0] bg-white px-[40px] py-[4px] text-center cursor-pointer font-[500]" >Login</a>
+        </div>
+
+        <div class="mt-[16px] ml-[3vw]">
+            <a href="#" class="text-white font-[500] cursor-pointer"><p>Become a seller</p></a>
+        </div>
+
+        <div class="mt-[16px] ml-[3vw] flex">
+            <a href="#" class="text-white font-[500] cursor-pointer"><p>More</p></a>
+            <p><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></p>
+        </div>
+
+        <div class="mt-[16px] ml-[3vw] flex">
+            
+            <p><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></p>
+            <a href="#" class="text-white font-[500] cursor-pointer ml-[10px]"><p>Cart</p></a>
+        </div>
     </nav>
 
     
@@ -194,7 +232,7 @@
     </section>
 
     <!--  upper slider -->
-    <section class="h-auto max-h-[150px] w-[100vw] border-[2px] flex overflow-x-auto scrollbar-hide overflow-y-hidden">
+    <section class="h-auto max-h-[150px] mt-[100px] w-[100vw] border-[2px] flex overflow-x-auto scrollbar-hide overflow-y-hidden xl:mt-[60px]">
         <div class="mr-[4px] flex flex-col justify-center h-[100%]">
             <img src="./assests/categories.jpg" alt="categories" class="w-[20vw] max-w-[125px]">
         </div>
@@ -333,7 +371,7 @@
         <div class="content1 overflow-x-auto scrollbar-hide">
             <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
                 <div class="w-[160px]">
-                    <img src="./big_screen_assest/camera1.webp" alt="camera" class="mt-[10px] h-[180px]">
+                    <img src="./big_screen_assest/camera1.webp" alt="camera" class="bs mt-[10px] h-[180px]">
                 </div>
                 
                 <p class="mt-[10px] text-center font-[500]">Top Microless Cameras</p>
@@ -412,6 +450,96 @@
 
 
 
+
+    <section class="big_screen_section1">
+        <div class="beauty">
+            <div class="main-con">
+                <p class="text-p">Beauty, Food,<br> <span>Toys & More</span></p>
+                <button class="btn-sm">VIEW ALL</button>
+            </div>
+        </div>
+
+        <div class="content1 overflow-x-auto scrollbar-hide">
+            <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[215px]">
+                    <img src="./big_screen_assest/p2-1.webp" alt="camera" class="mt-[10px] h-[150px]">
+                </div>
+                
+                <p class="mt-[35px] text-center font-[500]">Gear Cycle/p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop Now!</p>
+                <p class="text-center mt-[10px] text-gray-400">all cycle</p>
+            </div>
+            <div class="w-[200px] h-[300px] mr-[80px] ml-[40px] whitespace-nowrap">
+                <div class="w-[160px]">
+                    <img src="./big_screen_assest/p2-2.webp" alt="camera" class="mt-[10px] h-[180px]">
+                </div>
+                
+                <p class="mt-[10px] text-center font-[500]">Stationaries</p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop Now!</p>
+                <p class="text-center mt-[10px] text-gray-400">all statonary</p>
+            </div>
+            <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[200px]">
+                    <img src="./big_screen_assest/p2-3.webp" alt="camera" class="mt-[3px] h-[200px] ml-[20px]">
+                </div>
+                
+                <p class="mt-[-2px] text-center font-[500]">Toys</p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop now!</p>
+                <p class="text-center mt-[10px] text-gray-400">All toys</p>
+            </div>
+            <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[160px]">
+                    <img src="./big_screen_assest/p2-4.webp" alt="camera" class="mt-[10px] h-[180px]">
+                </div>
+                
+                <p class="mt-[10px] text-center font-[500]">Matresess</p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop now!</p>
+                <p class="text-center mt-[10px] text-gray-400">All Matresess</p>
+            </div>
+            <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[215px]">
+                    <img src="./big_screen_assest/p2-5.webp" alt="camera" class="mt-[10px] h-[150px]">
+                </div>
+                
+                <p class="mt-[35px] text-center font-[500]">Non-gear Cycle</p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop now!</p>
+                <p class="text-center mt-[10px] text-gray-400 ">all cycle</p>
+            </div>
+            <div class="w-[200px] h-[300px] mr-[80px]  whitespace-nowrap">
+                <div class="w-[215px]">
+                    <img src="./big_screen_assest/p2-6.webp" alt="camera" class="mt-[10px] h-[150px]">
+                </div>
+                
+                <p class="mt-[35px] text-center font-[500]">Electric Cycle</p>
+                <p class="text-center mt-[10px] text-[#388e3c]">Shop now!</p>
+                <p class="text-center mt-[10px] text-gray-400">Phillips & Havells</p>
+            </div>
+            <div class="w-[240px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[160px]">
+                    <img src="./big_screen_assest/p2-8.webp" alt="camera" class="mt-[10px] h-[180px]">
+                </div>
+                <!-- <img src="./big_screen_assest//pic7.webp" alt="camera" class="mt-[10px] h-[180px]"> -->
+                <p class="mt-[10px] text-center font-[500]">Baby Product</p>
+                <p class="mt-[10px] text-center text-[#388e3c]">Shop Now!</p>
+                <p class="mt-[10px] text-center text-gray-400 ">all product</p>
+            </div>
+
+            <div class="w-[200px] h-[300px] mr-[80px] whitespace-nowrap">
+                <div class="w-[160px] ml-[20px]">
+                    <img src="./big_screen_assest/p2-9.webp" alt="camera" class="mt-[40px] h-[150px]">
+                </div>
+                
+                <p class="mt-[10px] text-center font-[500]">Food streak</p>
+                <p class="mt-[10px] text-center text-[#388e3c]">Shop now!</p>
+                <p class=" mt-[10px]  text-center text-gray-400">All food</p>
+            </div>
+        </div>
+
+
+    </section>
+    
+
+    <!-- part 3 -->
 
     <section class="big_screen_section1">
         <div class="electronic">
@@ -499,7 +627,6 @@
 
 
     </section>
-    
       
 
     

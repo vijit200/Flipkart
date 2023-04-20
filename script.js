@@ -10,6 +10,20 @@ slide1.addEventListener("click",(e)=>{
     }
 })
 
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stik")
+  } else {
+    navbar.classList.remove("stik");
+  }
+}
+
 // Initialization for ES Users
 var slidePosition = 0;
 SlideShow();
@@ -55,3 +69,5 @@ function SlideShow1(n) {
     slides[slidePosition1-1].style.display = "block";
     circles[slidePosition1-1].className += " enable";
   } 
+
+

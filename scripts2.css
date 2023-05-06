@@ -112,7 +112,7 @@
   background: url('./big_screen_assest/banner1.jpg');
   background-position: bottom;
   width: 245px;
-  height: 300px;
+  height: 350px;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -164,7 +164,9 @@
 }
 
 
-
+.box{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 
 @media screen and (min-width:750px){
@@ -184,6 +186,12 @@
 
 @media screen and (max-width:768px) {
   .big_screen_section1{
+    display: none;
+  }  
+}
+
+@media screen and (max-width:1280px) {
+  .hid{
     display: none;
   }  
 }
